@@ -37,13 +37,13 @@ updateScreen()
 # Player on the game.
 if win: print("""
     __________________________________________________
-    \n    You won! Congratulations!.
+    \n    Congratulations, you win!.
     __________________________________________________
     """)
 
 # Player lost the game.
 if lives == 0: print("""
     __________________________________________________
-    \n    You lost... The word was '{}'.
+    \n    You lose... The word was '{}'.
     __________________________________________________
     """.format(wordToGuess))
