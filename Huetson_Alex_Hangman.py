@@ -8,15 +8,15 @@ win = False
 
 def updateScreen():
     helpers.updateGallows(lives, wordToGuess)
-    print("    Word To Guess: " + wordObscured)
     print("    Letters entered: " + str(lettersEntered))
+    print("    Word To Guess: " + wordObscured)
 
     return
 
 # Game loop
 while (lives > 0):
     updateScreen()
-    letter = input("\n    Enter a letter: ")
+    letter = input("\n    Please enter your next guess: ")
 
     if letter not in lettersEntered:
         lettersEntered.append(letter)
